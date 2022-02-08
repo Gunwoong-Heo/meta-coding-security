@@ -20,8 +20,18 @@ public class User {
     private String password;
     private String email;
     private String role; //ROLE_USER, ROLE_ADMIN
+
+    private String provider;
+    private String providerId;
+
     @CreatedDate
     @Column(updatable = false)
     private LocalDateTime createdDate;
+
+    // username = "google_113594258346664706643"
+    // password = "암호화(ungk)"  // Oauth 사용하면 password를 사용할 것은 아니라서 아무거나 넣어도 상관은 없음
+    // email = "gunwoong1129@gmail.com"
+    // provider = "google"
+    // providerId = "113594258346664706643"
 
 }
